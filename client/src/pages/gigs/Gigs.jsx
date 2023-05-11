@@ -18,7 +18,8 @@ function Gigs() {
     queryFn: () =>
       newRequest
         .get(
-          `/gigs${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}`
+          `/gigs`
+          //${search}&min=${minRef.current.value}&max=${maxRef.current.value}&sort=${sort}
         )
         .then((res) => {
           return res.data;
@@ -43,11 +44,9 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">Liverr > Graphics & Design ></span>
-        <h1>AI Artists</h1>
-        <p>
-          Explore the boundaries of art and technology with Liverr's AI artists
-        </p>
+        <span className="breadcrumbs">e-Maalem > Bricolage ></span>
+        <h1>Plomberie</h1>
+        
         <div className="menu">
           <div className="left">
             <span>Budget</span>

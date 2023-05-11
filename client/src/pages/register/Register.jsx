@@ -26,13 +26,13 @@ function Register() {
 
   const handleSeller = (e) => {
     setUser((prev) => {
-      return { ...prev, isSeller: e.target.checked };
+      return { ...prev, isTasker: e.target.checked };
     });
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    await newRequest.post("http://localhost:8800/api/auth/register", user)
+    await newRequest.post("http://localhost:8000/api/auth/register", user)
       .then((res) => {
         const { status } = res
         if (status === 201) {

@@ -44,7 +44,7 @@ const Messages = () => {
           </div>
           <table>
             <tr>
-              <th>{currentUser.isSeller ? "Buyer" : "Seller"}</th>
+              <th>{currentUser.isTasker ? "Buyer" : "Seller"}</th>
               <th>Last Message</th>
               <th>Date</th>
               <th>Action</th>
@@ -52,13 +52,13 @@ const Messages = () => {
             {data.map((c) => (
               <tr
                 className={
-                  ((currentUser.isSeller && !c.readBySeller) ||
-                    (!currentUser.isSeller && !c.readByBuyer)) &&
+                  ((currentUser.isTasker && !c.readBySeller) ||
+                    (!currentUser.isTasker && !c.readByBuyer)) &&
                   "active"
                 }
                 key={c.id}
               >
-                <td>{currentUser.isSeller ? c.buyerId : c.sellerId}</td>
+                <td>{currentUser.isTasker ? c.buyerId : c.sellerId}</td>
                 <td>
                   <Link to={`/message/${c.id}`} className="link">
                     {c?.lastMessage?.substring(0, 100)}...
@@ -66,8 +66,8 @@ const Messages = () => {
                 </td>
                 <td>{moment(c.updatedAt).fromNow()}</td>
                 <td>
-                  {((currentUser.isSeller && !c.readBySeller) ||
-                    (!currentUser.isSeller && !c.readByBuyer)) && (
+                  {((currentUser.isTasker && !c.readBySeller) ||
+                    (!currentUser.isTasker && !c.readByBuyer)) && (
                     <button onClick={() => handleRead(c.id)}>
                       Mark as Read
                     </button>

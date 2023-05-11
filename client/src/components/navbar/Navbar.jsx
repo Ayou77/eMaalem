@@ -39,22 +39,19 @@ function Navbar() {
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
-            <span className="text">fiverr</span>
+            <span className="text">e-Maalem</span>
           </Link>
-          <span className="dot">.</span>
         </div>
         <div className="links">
-          <span>Fiverr Business</span>
-          <span>Explore</span>
-          <span>English</span>
-          {!currentUser?.isSeller && <span>Become a Seller</span>}
+          {/* <span>e-Maalem Business</span> */}
+          {!currentUser?.isTasker && <span>Devenir un prestataire</span>}
           {currentUser ? (
             <div className="user" onClick={() => setOpen(!open)}>
               <img src={currentUser.img || "/img/noavatar.jpg"} alt="" />
               <span>{currentUser?.username}</span>
               {open && (
                 <div className="options">
-                  {currentUser.isSeller && (
+                  {currentUser.isTasker && (
                     <>
                       <Link className="link" to="/mygigs">
                         Gigs
@@ -78,9 +75,9 @@ function Navbar() {
             </div>
           ) : (
             <>
-              <Link to="/login" className="link">Sign in</Link>
+              <Link to="/login" className="link">Connexion</Link>
               <Link className="link" to="/register">
-                <button>Join</button>
+                <button>Inscription</button>
               </Link>
             </>
           )}
@@ -91,31 +88,31 @@ function Navbar() {
           <hr />
           <div className="menu">
             <Link className="link menuLink" to="/">
-              Graphics & Design
+              Ameublement
             </Link>
             <Link className="link menuLink" to="/">
-              Video & Animation
+              Installation et Fixation
             </Link>
             <Link className="link menuLink" to="/">
-              Writing & Translation
+              Renovation des Murs
             </Link>
             <Link className="link menuLink" to="/">
-              AI Services
+              Plomberie
             </Link>
             <Link className="link menuLink" to="/">
-              Digital Marketing
+              Serrurerie
             </Link>
             <Link className="link menuLink" to="/">
-              Music & Audio
+              Electromenager
             </Link>
             <Link className="link menuLink" to="/">
-              Programming & Tech
+              Electricite
             </Link>
             <Link className="link menuLink" to="/">
-              Business
+              Renovation des sols
             </Link>
             <Link className="link menuLink" to="/">
-              Lifestyle
+              Reparation
             </Link>
           </div>
           <hr />

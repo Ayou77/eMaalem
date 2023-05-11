@@ -5,19 +5,23 @@ import TrustedBy from "../../components/trustedBy/TrustedBy";
 import Slide from "../../components/slide/Slide";
 import CatCard from "../../components/catCard/CatCard";
 import ProjectCard from "../../components/projectCard/ProjectCard";
-import { cards, projects } from "../../data";
+import { cards, projects, categories } from "../../data";
+import { Link } from "react-router-dom";
+import { ReactComponent as Bricolage } from "../../media/bricolage.svg";
+import CategoriesGrid from "../../components/categoriesGrid/CategoriesGrid";
 
 function Home() {
   return (
     <div className="home">
       <Featured />
+      <CategoriesGrid />
       <TrustedBy />
       <Slide slidesToShow={5} arrowsScroll={5}>
         {cards.map((card) => (
           <CatCard key={card.id} card={card} />
         ))}
       </Slide>
-      <div className="features">
+      {/* <div className="features">
         <div className="container">
           <div className="item">
             <h1>A whole world of freelance talent at your fingertips</h1>
@@ -51,6 +55,8 @@ function Home() {
             </div>
             <p>
               Find high-quality services at every price point. No hourly rates,
+             
+             
               just project-based pricing.
             </p>
           </div>
@@ -58,8 +64,8 @@ function Home() {
             <video src="./img/video.mp4" controls />
           </div>
         </div>
-      </div>
-      <div className="explore">
+      </div> */}
+      {/* <div className="explore">
         <div className="container">
           <h1>Explore the marketplace</h1>
           <div className="items">
@@ -146,12 +152,12 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="features dark">
+      </div> */}
+      {/* <div className="features dark">
         <div className="container">
           <div className="item">
             <h1>
-              fiverr <i>business</i>
+              liverr <i>business</i>
             </h1>
             <h1>
               A business solution designed for <i>teams</i>
@@ -174,7 +180,7 @@ function Home() {
               <img src="./img/check.png" alt="" />
               Manage teamwork and boost productivity with one powerful workspace
             </div>
-            <button>Explore Fiverr Business</button>
+            <button>Explore Liverr Business</button>
           </div>
           <div className="item">
             <img
@@ -183,12 +189,12 @@ function Home() {
             />
           </div>
         </div>
-      </div>
-      <Slide slidesToShow={4} arrowsScroll={4}>
+      </div> */}
+      {/* <Slide slidesToShow={4} arrowsScroll={4}>
         {projects.map((card) => (
           <ProjectCard key={card.id} card={card} />
         ))}
-      </Slide>
+      </Slide> */}
     </div>
   );
 }

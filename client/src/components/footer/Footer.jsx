@@ -34,8 +34,8 @@ function Footer() {
             <h2>Support</h2>
             <span>Help & Support</span>
             <span>Trust & Safety</span>
-            <span>Selling on Fiverr</span>
-            <span>Buying on Fiverr</span>
+            <span>Selling on e-Maalem</span>
+            <span>Buying on e-Maalem</span>
           </div>
           <div className="item">
             <h2>Community</h2>
@@ -52,15 +52,15 @@ function Footer() {
             <span>Community Standards</span>
           </div>
           <div className="item">
-            <h2>More From Fiverr</h2>
-            <span>Fiverr Business</span>
-            <span>Fiverr Pro</span>
-            <span>Fiverr Logo Maker</span>
-            <span>Fiverr Guides</span>
+            <h2>More From e-Maalem</h2>
+            <span>e-Maalem Business</span>
+            <span>e-Maalem Pro</span>
+            <span>e-Maalem Logo Maker</span>
+            <span>e-Maalem Guides</span>
             <span>Get Inspired</span>
-            <span>Fiverr Select</span>
+            <span>e-Maalem Select</span>
             <span>ClearVoice</span>
-            <span>Fiverr Workspace</span>
+            <span>e-Maalem Workspace</span>
             <span>Learn</span>
             <span>Working Not Working</span>
           </div>
@@ -68,8 +68,8 @@ function Footer() {
         <hr />
         <div className="bottom">
           <div className="left">
-            <h2>fiverr</h2>
-            <span>© Fiverr International Ltd. 2023</span>
+            <h2>e-Maalem</h2>
+            <span>© e-Maalem International Ltd. 2023</span>
           </div>
           <div className="right">
             <div className="social">

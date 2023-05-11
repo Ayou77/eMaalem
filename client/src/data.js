@@ -1,54 +1,58 @@
+import { ReactComponent as Ameublement } from "./media/ameublement.svg";
+import { ReactComponent as Plomberie } from "./media/plomberie.svg";
+import { ReactComponent as installFix } from "./media/installFix.svg";
+import { ReactComponent as Demenagement } from "./media/demenagement.svg";
+import { ReactComponent as renevMur } from "./media/renevMur.svg";
+import { ReactComponent as renevSol } from "./media/renevSol.svg";
+import { ReactComponent as electricite } from "./media/electricite.svg";
+import { ReactComponent as Jardinage } from "./media/jardinage.svg";
+import { ReactComponent as Menage } from "./media/menage.svg";
+import { ReactComponent as serrurerie } from "./media/serrurerie.svg";
+import { ReactComponent as elecMenag } from "./media/elecMenag.svg";
+
+
 export const cards = [
   {
     id: 1,
     title: "AI Artists",
-    desc: "Add talent to AI",
-    img: "https://images.pexels.com/photos/7532110/pexels-photo-7532110.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    //img: "https://images.pexels.com/photos/7532110/pexels-photo-7532110.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 2,
     title: "Logo Design",
-    desc: "Build yor brand",
-    img: "https://images.pexels.com/photos/11295165/pexels-photo-11295165.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    //img: "https://images.pexels.com/photos/11295165/pexels-photo-11295165.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 3,
     title: "WordPress",
-    desc: "Customize your site",
-    img: "https://images.pexels.com/photos/4371669/pexels-photo-4371669.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    //img: "https://images.pexels.com/photos/4371669/pexels-photo-4371669.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 4,
     title: "Voice Over",
-    desc: "Share your message",
-    img: "https://images.pexels.com/photos/7608079/pexels-photo-7608079.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    //img: "https://images.pexels.com/photos/7608079/pexels-photo-7608079.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 5,
     title: "Video Explainer",
-    desc: "Engage your audience",
-    img: "https://images.pexels.com/photos/13388047/pexels-photo-13388047.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    //img: "https://images.pexels.com/photos/13388047/pexels-photo-13388047.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 6,
     title: "Social Media",
-    desc: "Reach more customers",
-    img: "https://images.pexels.com/photos/11378899/pexels-photo-11378899.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    //img: "https://images.pexels.com/photos/11378899/pexels-photo-11378899.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 7,
     title: "SEO",
-    desc: "Unlock growth online",
-    img: "https://images.pexels.com/photos/4820241/pexels-photo-4820241.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    //img: "https://images.pexels.com/photos/4820241/pexels-photo-4820241.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
   {
     id: 8,
     title: "Illustration",
-    desc: "Color you dreams",
-    img: "https://images.pexels.com/photos/15032623/pexels-photo-15032623.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    //img: "https://images.pexels.com/photos/15032623/pexels-photo-15032623.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
   },
 ];
-
 export const projects = [
   {
     id: 1,
@@ -107,7 +111,6 @@ export const projects = [
     username: "Ward Brewer",
   },
 ];
-
 export const gigs = [
   {
     id: 1,
@@ -181,4 +184,62 @@ export const gigs = [
     star: 4,
     username: "Wilton Hunt",
   },
+];
+
+export const categories = [
+  {
+    id: 0,
+    Image: Ameublement,
+    title: "Ameublement",
+  },
+  {
+    id: 1,
+    Image: Plomberie,
+    title: "Plomberie",
+  },
+  {
+    id: 2,
+    Image: installFix,
+    title: "Installation et Fixation",
+  },
+  {
+    id: 3,
+    Image: Demenagement,
+    title: "Déménagement",
+  },
+  {
+    id: 4,
+    Image: renevMur,
+    title: "Renévation des Murs",
+  },
+  {
+    id: 5,
+    Image: renevSol,
+    title: "Renévation des Sols",
+  },
+  {
+    id: 6,
+    Image: electricite,
+    title: "Electricité",
+  },
+  {
+    id: 7,
+    Image: Jardinage,
+    title: "Jardinage",
+  },
+  {
+    id: 8,
+    Image: Menage,
+    title: "Nettoyage",
+  },
+  {
+    id: 9,
+    Image: serrurerie,
+    title: "Serrurerie",
+  },
+  {
+    id: 9,
+    Image: elecMenag,
+    title: "Electroménager",
+  }
 ];
