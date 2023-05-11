@@ -3,15 +3,15 @@ const { Schema } = mongoose;
 
 const GigSchema = new Schema(
   {
-    userId: {
+    "userId": {
       type: String,
       required: true,
     },
-    title: {
+    "title": {
       type: String,
       required: true,
     },
-    desc: {
+    "desc": {
       type: String,
       required: true,
     },
@@ -23,15 +23,15 @@ const GigSchema = new Schema(
       type: Number,
       default: 0,
     },
-    cat: {
+    "cat": {
       type: String,
       required: true,
     },
-    price: {
+    "price": {
       type: Number,
       required: true,
     },
-    cover: {
+    "cover": {
       type: String,
       required: true,
     },
@@ -39,23 +39,19 @@ const GigSchema = new Schema(
       type: [String],
       required: false,
     },
-    userId: {
+    "shortTitle": {
       type: String,
       required: true,
     },
-    shortTitle: {
+    "shortDesc": {
       type: String,
       required: true,
     },
-    shortDesc: {
-      type: String,
-      required: true,
-    },
-    deliveryTime: {
+    "deliveryTime": {
       type: Number,
       required: true,
     },
-    revisionNumber: {
+    "revisionNumber": {
       type: Number,
       required: true,
     },
@@ -74,3 +70,11 @@ const GigSchema = new Schema(
 );
 
 export default mongoose.model("Gig", GigSchema);
+
+
+
+
+
+
+
+  

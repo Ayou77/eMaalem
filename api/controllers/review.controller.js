@@ -3,7 +3,7 @@ import Review from "../models/review.model.js";
 import Gig from "../models/gig.model.js";
 
 export const createReview = async (req, res, next) => {
-  if (req.isSeller)
+  if (req.isTasker)
     return next(createError(403, "Sellers can't create a review!"));
 
   const newReview = new Review({

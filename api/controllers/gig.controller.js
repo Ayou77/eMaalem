@@ -2,7 +2,7 @@ import Gig from "../models/gig.model.js";
 import createError from "../utils/createError.js";
 
 export const createGig = async (req, res, next) => {
-  if (!req.isSeller)
+  if (!req.isTasker)
     return next(createError(403, "Only sellers can create a gig!"));
 
   const newGig = new Gig({
@@ -39,6 +39,7 @@ export const getGig = async (req, res, next) => {
   }
 };
 export const getGigs = async (req, res, next) => {
+  console.log("AYOUB M9")
   const q = req.query;
   const filters = {
     ...(q.userId && { userId: q.userId }),
