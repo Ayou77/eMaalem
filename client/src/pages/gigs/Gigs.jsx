@@ -44,7 +44,7 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">e-Maalem > Bricolage ></span>
+        <span className="breadcrumbs">e-Maalem {'>'} Bricolage {'>'}</span>
         <h1>Plomberie</h1>
         
         <div className="menu">

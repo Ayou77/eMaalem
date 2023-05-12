@@ -238,8 +238,8 @@ export const categories = [
     title: "Serrurerie",
   },
   {
-    id: 9,
+    id: 10,
     Image: elecMenag,
     title: "Electroménager",
-  }
+  },
 ];

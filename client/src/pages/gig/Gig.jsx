@@ -17,6 +17,37 @@ function Gig() {
       }),
   });
 
+  const formatMemberSince = (createdAt) => {
+    const ALL_Months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+
+    // createdAt : 20223-05-01T00:00:00
+    
+    const [year, month_index] = createdAt.split("-");
+    // ["2023", "05", "01T00:00:00"]
+    
+    // year: 2023
+    // month index : 05
+
+    const month = ALL_Months[parseInt(month_index) - 1];
+    // month: "May"
+
+    // "May 2023"
+    return `${month} ${year}`;
+  };
+
   const userId = data?.userId;
 
   const {
@@ -69,11 +100,17 @@ function Gig() {
                 )}
               </div>
             )}
-            <Slider slidesToShow={1} arrowsScroll={1} className="slider">
-              {data.images.map((img) => (
-                <img key={img} src={img} alt="" />
-              ))}
-            </Slider>
+
+            {/* Checking if user have no images */}
+            {data.images?.length > 0 && (
+              // Only render slider if user has at least one image
+              <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+                {data.images.map((img) => (
+                  <img key={img} src={img} alt="" />
+                ))}
+              </Slider>
+            )}
+
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
             {isLoadingUser ? (
@@ -110,7 +147,10 @@ function Gig() {
                     </div>
                     <div className="item">
                       <span className="title">Member since</span>
-                      <span className="desc">Aug 2022</span>
+
+                      <span className="desc">
+                        {formatMemberSince(dataUser.createdAt)}
+                      </span>
                     </div>
                     <div className="item">
                       <span className="title">Avg. response time</span>
@@ -157,7 +197,7 @@ function Gig() {
               ))}
             </div>
             <Link to={`/pay/${id}`}>
-            <button>Continue</button>
+              <button>Continue</button>
             </Link>
           </div>
         </div>

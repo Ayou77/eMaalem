@@ -7,7 +7,5 @@ export const becomeTasker = async (req, res) => {
     user.save();
 
 
-
-
     return res.send("BLA BLA")
 }
