@@ -6,6 +6,8 @@ import newRequest from "../../utils/newRequest";
 import { useParams } from "react-router-dom";
 import CheckoutForm from "../../components/checkoutForm/CheckoutForm";
 
+// TODO:
+// Need to create stripe account
 const stripePromise = loadStripe(
   "paste your public key"
 );
